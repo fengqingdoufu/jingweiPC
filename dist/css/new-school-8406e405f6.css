@@ -1,0 +1,73 @@
+.info-list {
+  padding: 70px 70px 120px; }
+  .info-list li {
+    margin-bottom: 30px;
+    cursor: pointer; }
+  .info-list .info-active .info-t .icon-arrow {
+    background: url("../images/icon-arrow-top.png") no-repeat;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .info-list .info-active .info-b {
+    max-height: 200px;
+    display: block; }
+  .info-list .info-t {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 14px; }
+    .info-list .info-t .icon-arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      width: 23px;
+      height: 13px;
+      background: url("../images/icon-arrow-bottom.png") no-repeat;
+      -o-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .info-list .info-t .icon-info {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: url("../images/icon-school.png") no-repeat;
+      margin-right: 14px; }
+    .info-list .info-t .icon-info-2 {
+      background-position: -60px 0; }
+    .info-list .info-t .icon-info-3 {
+      background-position: -120px 0; }
+    .info-list .info-t .icon-info-4 {
+      background-position: -180px 0; }
+    .info-list .info-t .icon-info-5 {
+      background-position: -240px 0; }
+    .info-list .info-t .icon-info-6 {
+      background-position: -300px 0; }
+    .info-list .info-t .icon-info-7 {
+      background-position: 0 -60px; }
+    .info-list .info-t .icon-info-8 {
+      background-position: -60px -60; }
+    .info-list .info-t .icon-info-9 {
+      background-position: -120px -60px; }
+    .info-list .info-t .icon-info-10 {
+      background-position: -180px -60px; }
+    .info-list .info-t .icon-info-11 {
+      background-position: -240px -60px; }
+    .info-list .info-t .info-title {
+      font-size: 24px;
+      color: #666; }
+  .info-list .info-b {
+    width: 948px;
+    max-height: 0;
+    padding-left: 64px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #666;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    overflow: hidden; }

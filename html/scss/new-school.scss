@@ -1,0 +1,90 @@
+@charset "utf-8";
+.info-list{
+  padding: 70px 70px 120px;
+  li{
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .info-active{
+    .info-t{
+      .icon-arrow{
+        background: url("../images/icon-arrow-top.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .info-b{
+      max-height: 200px;
+      display: block;
+    }
+  }
+  .info-t{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    .icon-arrow{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      display: block;
+      width: 23px;
+      height: 13px;
+      background: url("../images/icon-arrow-bottom.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .icon-info{
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: url("../images/icon-school.png") no-repeat;
+      margin-right: 14px;
+    }
+    .icon-info-2{
+      background-position: -60px 0;
+    }
+    .icon-info-3{
+      background-position: -120px 0;
+    }
+    .icon-info-4{
+      background-position: -180px 0;
+    }
+    .icon-info-5{
+      background-position: -240px 0;
+    }
+    .icon-info-6{
+      background-position: -300px 0;
+    }
+    .icon-info-7{
+      background-position: 0 -60px;
+    }
+    .icon-info-8{
+      background-position: -60px -60;
+    }
+    .icon-info-9{
+      background-position: -120px -60px;
+    }
+    .icon-info-10{
+      background-position: -180px -60px;
+    }
+    .icon-info-11{
+      background-position: -240px -60px;
+    }
+    .info-title{
+      font-size: 24px;
+      color: #666;
+    }
+  }
+  .info-b{
+    width: 948px;
+    max-height: 0;
+    padding-left:64px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #666;
+    transition: all 0.6s ;
+    overflow: hidden;
+  }
+}

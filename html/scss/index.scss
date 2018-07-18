@@ -1,0 +1,109 @@
+@charset "utf-8";
+body{
+  background: #e5e7e8;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+.app-btn{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 52px 0;
+
+  li{
+    a{
+      display: flex;
+      align-items: center;
+      width: 392px;
+      height: 164px;
+      background: #fff;
+      margin-bottom: 24px;
+      cursor: pointer;
+
+    }
+    a:hover{
+      box-shadow: 0 0 30px #bfbfbf;
+    }
+    .icon{
+      width: 91px;
+      height: 91px;
+      background: url("../images/icon-btn.png") no-repeat;
+      margin: 0 34px;
+    }
+    .btn-title{
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .btn-detail{
+      font-size: 14px;
+      color: #999;
+    }
+    .icon-2{
+      background-position: -101px 0;
+    }
+    .icon-3{
+      background-position: -202px 0;
+    }
+    .icon-4{
+      background-position: -303px 0;
+    }
+    .icon-5{
+      background-position: -404px 0;
+    }
+    .icon-6{
+      background-position: -505px 0;
+    }
+    .icon-7{
+      background-position: -606px 0;
+    }
+  }
+}
+
+.psw-inner-box,.pay-inner-box,.id-inner-box,.cash-inner-box,.bank-inner-box,.download-inner-box{
+  background: #fff;
+  height: 328px;
+}
+
+//修改密码
+.psw-inner-box{
+  #btn-psw{
+    background: #fbae52;
+    margin: 36px auto 0;
+  }
+}
+
+//认证
+.id-inner-box{
+  #sure-id{
+    margin: 36px auto 0;
+    background: #fbae52;
+  }
+}
+
+//下载
+.download-inner-box {
+  width: 460px !important;
+  .download-title{
+    padding: 40px 0;
+    font-size: 32px;
+    color: #363c4b;
+    }
+  .code-img {
+    display: flex;
+    justify-content: center;
+    li{
+      margin: 0 30px;
+      img{
+        width: 132px;
+        height: 132px;
+      }
+      p{
+        margin-top: 4px;
+        font-size: 14px;
+        color: #363c4b;
+      }
+    }
+  }
+}
+

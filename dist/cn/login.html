@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/common-b8608707b3.css">
+    <link rel="stylesheet" type="text/css" href="../css/login-7357717600.css">
+</head>
+<body>
+<div class="login">
+    <div class="login-box">
+        <ul class="user-info">
+            <li>
+                <p class="label">用户名</p>
+                <div class="print-info">
+                    <i class="icon-user icon-username"></i>
+                    <input type="text" placeholder="请输入用户名" autofocus="autofocus">
+                </div>
+            </li>
+            <li>
+                <p class="label">密码</p>
+                <div class="print-info">
+                    <i class="icon-user icon-psw"></i>
+                    <input type="password" placeholder="请输入密码">
+                </div>
+            </li>
+            <li>
+                <p class="label">验证码</p>
+                <div class="print-info print-code">
+                    <i class="icon-user icon-code"></i>
+                    <input type="text" placeholder="请输入验证码">
+                </div>
+                <div class="code"><canvas id="canvas" width="140" height="42"></canvas></div>
+            </li>
+        </ul>
+        <button class="login-btn">登录</button>
+    </div>
+</div>
+<script>
+    (function () {
+       var login = {
+           init: function () {
+               var canvas = document.querySelector('#canvas')
+               var ctx = canvas.getContext('2d')
+               this.draw(ctx)
+               this.canvasPlay(canvas,ctx)
+           },
+           canvasPlay: function (canvas,ctx) {
+               var that = this
+               canvas.onclick = function (ev) {
+                   var oEvent = ev || event;
+                   that.draw(ctx)
+                   oEvent.preventDefault()
+               }
+           },
+           draw: function (ctx) {
+               ctx.fillStyle = '#fff'
+               ctx.fillRect(0, 0, 140, 42)
+               var data = 'QWERTYUIOPASDFGHJKLZXCVBNM0123456789qwertyuiopasdfghjklzxcvbnm'
+               var len = data.length - 1
+               for (var i = 0; i <= 90; i += 30) {
+                   var c = data[this.ranNum(0, len)]
+                   ctx.fillStyle = this.randomColor(60, 160)
+                   ctx.font = '26px Arial '
+                   ctx.fillText(c, i + this.ranNum(5, 15), 30)
+               }
+           },
+           randomColor: function (min,max) {
+               var r = Math.floor(Math.random() * (max - min) + min)
+               var g = Math.floor(Math.random() * (max - min) + min)
+               var b = Math.floor(Math.random() * (max - min) + min)
+               return `rgb(${r},${g}, ${b})`
+           },
+           ranNum: function (min,max) {
+               var num = Math.floor(Math.random() * (max - min) + min)
+               return num
+           }
+       }
+       login.init()
+    })()
+</script>
+</body>
+</html>

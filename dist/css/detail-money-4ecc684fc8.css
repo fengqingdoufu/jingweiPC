@@ -1,0 +1,88 @@
+.data-money {
+  width: 1000px;
+  min-width: 1000px;
+  margin: 50px auto 80px; }
+  .data-money .data-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0 28px 0;
+    border-bottom: 1px solid #bfbfbf; }
+    .data-money .data-tab li {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 21px;
+      font-size: 26px;
+      color: #5c657c;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 0 10px; }
+    .data-money .data-tab li.active {
+      background: #fbae52;
+      color: #fff; }
+  .data-money .data-detail {
+    width: 1000px;
+    font-size: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .data-money .data-detail > li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 500px;
+      height: 88px;
+      padding: 38px 0 16px 0;
+      color: #999; }
+      .data-money .data-detail > li .time {
+        margin: 0 28px 0 56px; }
+        .data-money .data-detail > li .time p {
+          margin-bottom: 8px; }
+        .data-money .data-detail > li .time .week {
+          font-size: 20px; }
+        .data-money .data-detail > li .time .month, .data-money .data-detail > li .time .moment {
+          font-size: 16px; }
+        .data-money .data-detail > li .time .moment {
+          line-height: 17px; }
+          .data-money .data-detail > li .time .moment .icon-time {
+            display: inline-block;
+            vertical-align: middle;
+            width: 17px;
+            height: 17px;
+            background: url("../images/icon-time.png") no-repeat;
+            margin-right: 6px; }
+          .data-money .data-detail > li .time .moment span {
+            display: inline-block;
+            vertical-align: middle; }
+      .data-money .data-detail > li .info {
+        position: relative;
+        padding-left: 34px; }
+        .data-money .data-detail > li .info .icon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 16px;
+          height: 16px;
+          background: #5c657c;
+          border-radius: 50%; }
+        .data-money .data-detail > li .info p {
+          font-size: 20px;
+          margin-bottom: 16px; }
+          .data-money .data-detail > li .info p .info-title {
+            padding-right: 96px; }
+        .data-money .data-detail > li .info .pay-money {
+          color: #fbae52; }
+        .data-money .data-detail > li .info .normal-info {
+          color: #666; }
+    .data-money .data-detail > li:nth-child(odd) {
+      width: 499px;
+      border-right: 1px solid #bfbfbf; }

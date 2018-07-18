@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/my-bank-card.css">
+</head>
+<body>
+<!--头部信息-->
+<div class="header" id="header">
+    <div class="content flex-space-between">
+        <div class="user-info">
+            <img src="../images/bg-userhaed.png" alt="">
+            <p>13506015245</p>
+        </div>
+        <div class="user-data">
+            <div class="user-data-t flex-space-between">
+                <div class="user-money">
+                    <h3>总资产</h3>
+                    <p>104567.00</p>
+                </div>
+                <div class="user-btn">
+                    <a class="add" href="#pay-box">充值</a>
+                    <a class="reduce" href="#cash-box">提现</a>
+                </div>
+            </div>
+            <div class="uers-data-b">
+                <p><i class="icon-color-1"></i>劣后价值<span>0.00</span></p>
+                <p><i class="icon-color-2"></i>现金价值<span>0.00</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--我的银行卡-->
+<div class="content bank-list-wrap">
+    <ul class="bank-list" >
+        <li>
+            <img src="../images/icon-bank.png" alt="">
+            <div>
+                <p class="card-text">
+                    <span class="card-name">招商银行</span>
+                    <strong class="card-type">信用卡</strong>
+                </p>
+                <p class="card-num">**** **** **** 4578</p>
+            </div>
+            <i class="icon-right-arrow"></i>
+        </li>
+    </ul>
+    <div class="no-bank">
+        <i class="bg-no-bank"></i>
+        <p>暂无银行卡</p>
+    </div>
+    <a id="add-bank-btn" href="#bank-box">添加银行卡</a>
+</div>
+<!--新增银行卡-->
+<div class="fixed-box bank-box" id="bank-box">
+    <div class="inner-box bank-inner-box">
+        <h1 class="title">添加银行卡</h1>
+        <ul class="list">
+            <li class="item">
+                <span>银行卡号：</span><strong>500元</strong>
+            </li>
+            <li class="item">
+                <span>银行名称：</span>
+                <div class="bank-list">
+                    <p>中国建设银行</p>
+                </div>
+                <i class="icon-arrow"></i>
+            </li>
+            <li class="item">
+                <span>开户省市：</span>
+                <div class="bank-list">
+                    <p>福建省泉州市惠安县</p>
+                </div>
+                <i class="icon-arrow"></i>
+            </li>
+            <li class="item"><span>开户支行：</span><input type="text" placeholder="请输入支行名称"></li>
+        </ul>
+        <button id="sure-add-bank">确认添加</button>
+        <a class="close" href="###"></a>
+    </div>
+</div >
+<!--账户提现-->
+<div class="fixed-box cash-box" id="cash-box">
+    <div class="inner-box cash-inner-box">
+        <h1 class="title">账户提现</h1>
+        <ul class="list">
+            <li class="item">
+                <span>当前余额：</span><strong>500元</strong>
+            </li>
+            <li class="item">
+                <span>提现金额：</span><input type="text" placeholder="请输入提现金额"/>
+            </li>
+            <li class="item">
+                <span>提现银行卡：</span>
+                <div class="bank-list">
+                    <p>建设银行（2956）</p>
+                </div>
+                <i class="icon-arrow"></i>
+            </li>
+        </ul>
+        <div class="add-bank">十 添加银行卡</div>
+        <button id="sure-cash">确认提现</button>
+        <a class="close" href="###"></a>
+    </div>
+</div>
+<!--充值-->
+<div class="fixed-box pay-box"  id="pay-box">
+    <div class="inner-box pay-inner-box">
+        <h1 class="title">充值订单</h1>
+        <ul class="list">
+            <li class="item">
+                <span>当前余额：</span><strong>500元</strong>
+            </li>
+            <li class="item">
+                <span>充值金额：</span><input type="number" placeholder="请输入金额，至少100元起"/>
+            </li>
+        </ul>
+        <div class="btn-pay">
+            <button id="yinlian">银联付款</button>
+            <button id="weixin" >微信付款</button>
+            <button id="zhifubao">支付宝付款</button>
+        </div>
+        <a class="close" href="###"></a>
+    </div>
+</div>
+<!--返回首页-->
+<div class="back-index">
+    <a href="../index.html">
+        <p>返回</p>
+        <p>首页</p>
+    </a>
+</div>
+</body>
+</html>

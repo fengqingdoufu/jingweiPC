@@ -1,0 +1,91 @@
+.bank-list-wrap {
+  text-align: center; }
+  .bank-list-wrap .no-bank {
+    display: none;
+    text-align: center; }
+    .bank-list-wrap .no-bank .bg-no-bank {
+      display: block;
+      width: 208px;
+      height: 151px;
+      background: url("../images/bg-no-bank.png") no-repeat;
+      margin: 96px auto 36px; }
+    .bank-list-wrap .no-bank p {
+      font-size: 30px;
+      color: #31384a;
+      margin-bottom: 78px; }
+  .bank-list-wrap .bank-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 52px;
+    font-size: 0; }
+    .bank-list-wrap .bank-list li:hover {
+      -webkit-box-shadow: 0 0 30px #bfbfbf;
+      box-shadow: 0 0 30px #bfbfbf; }
+    .bank-list-wrap .bank-list li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 392px;
+      height: 164px;
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      cursor: pointer;
+      text-align: left; }
+      .bank-list-wrap .bank-list li img {
+        width: 46px;
+        height: 46px;
+        margin: 0 20px 0 24px; }
+      .bank-list-wrap .bank-list li .card-text {
+        margin-bottom: 24px; }
+      .bank-list-wrap .bank-list li .card-name {
+        font-size: 24px;
+        color: #31384a;
+        margin-right: 14px; }
+      .bank-list-wrap .bank-list li .card-type {
+        font-size: 20px;
+        color: #999;
+        font-weight: normal; }
+      .bank-list-wrap .bank-list li .card-num {
+        font-size: 26px;
+        color: #999; }
+      .bank-list-wrap .bank-list li .icon-right-arrow {
+        display: block;
+        width: 10px;
+        height: 18px;
+        background: url("../images/icon-arrow-right.png") no-repeat;
+        margin-left: 22px; }
+  .bank-list-wrap .bank-list:empty + .no-bank {
+    display: block; }
+  .bank-list-wrap #add-bank-btn {
+    display: inline-block;
+    padding: 0;
+    font-size: 20px;
+    width: 218px;
+    height: 64px;
+    line-height: 64px;
+    border-radius: 40px;
+    color: #fff;
+    background: #fbae52;
+    -webkit-box-shadow: 0 0 15px #bfbfbf;
+    box-shadow: 0 0 15px #bfbfbf;
+    cursor: pointer;
+    margin: 30px auto;
+    text-align: center; }
+
+.bank-inner-box {
+  background: #fff;
+  height: 410px !important; }
+  .bank-inner-box #sure-add-bank {
+    margin: 24px auto 0; }

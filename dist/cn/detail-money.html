@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/common-b8608707b3.css">
+    <link rel="stylesheet" type="text/css" href="../css/detail-money-4ecc684fc8.css">
+</head>
+<body>
+<!--头部信息-->
+<div class="header" id="header">
+    <div class="content flex-space-between">
+        <div class="user-info">
+            <img src="../images/bg-userhaed.png" alt="">
+            <p>13506015245</p>
+        </div>
+        <div class="user-data">
+            <div class="user-data-t flex-space-between">
+                <div class="user-money">
+                    <h3>总资产</h3>
+                    <p>104567.00</p>
+                </div>
+                <div class="user-btn">
+                    <a class="add" href="#pay-box">充值</a>
+                    <a class="reduce" href="#cash-box">提现</a>
+                </div>
+            </div>
+            <div class="uers-data-b">
+                <p><i class="icon-color-1"></i>劣后价值<span>0.00</span></p>
+                <p><i class="icon-color-2"></i>现金价值<span>0.00</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--资金数据内容-->
+<div class="data-money">
+    <ul class="data-tab">
+        <li class="active">全部</li>
+        <li>线上充值</li>
+        <li>线下充值</li>
+        <li>线下提现</li>
+        <li>投顾入金</li>
+    </ul>
+    <ul class="data-detail">
+        <li>
+         <div class="time">
+            <p class="week">周二</p>
+            <p class="month">2018/6/11</p>
+            <p class="moment"><i class="icon-time"></i><span>11:11</span></p>
+         </div>
+         <div class="info">
+             <i class="icon"></i>
+             <p><span class="info-title">支出</span><span class="pay-money">-0.00</span></p>
+             <p><span class="info-title">余额</span><span class="normal-info">500.00</span></p>
+             <p><span class="info-title">摘要</span><span class="normal-info">线下提现</span></p>
+         </div>
+        </li>
+    </ul>
+</div>
+<!--账户提现-->
+<div class="fixed-box cash-box" id="cash-box">
+    <div class="inner-box cash-inner-box">
+        <h1 class="title">账户提现</h1>
+        <ul class="list">
+            <li class="item">
+                <span>当前余额：</span><strong>500元</strong>
+            </li>
+            <li class="item">
+                <span>提现金额：</span><input type="text" placeholder="请输入提现金额"/>
+            </li>
+            <li class="item">
+                <span>提现银行卡：</span>
+                <div class="bank-list">
+                    <p>建设银行（2956）</p>
+                </div>
+                <i class="icon-arrow"></i>
+            </li>
+        </ul>
+        <div class="add-bank">十 添加银行卡</div>
+        <button id="sure-cash">确认提现</button>
+        <a class="close" href="###"></a>
+    </div>
+</div>
+<!--充值-->
+<div class="fixed-box pay-box"  id="pay-box">
+    <div class="inner-box pay-inner-box">
+        <h1 class="title">充值订单</h1>
+        <ul class="list">
+            <li class="item">
+                <span>当前余额：</span><strong>500元</strong>
+            </li>
+            <li class="item">
+                <span>充值金额：</span><input type="number" placeholder="请输入金额，至少100元起"/>
+            </li>
+        </ul>
+        <div class="btn-pay">
+            <button id="yinlian">银联付款</button>
+            <button id="weixin" >微信付款</button>
+            <button id="zhifubao">支付宝付款</button>
+        </div>
+        <a class="close" href="###"></a>
+    </div>
+</div>
+<!--返回首页-->
+<div class="back-index">
+    <a href="../index.html">
+        <p>返回</p>
+        <p>首页</p>
+    </a>
+</div>
+</body>
+</html>

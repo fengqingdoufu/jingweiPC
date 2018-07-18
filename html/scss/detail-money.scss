@@ -1,0 +1,94 @@
+@charset "utf-8";
+.data-money{
+  width: 1000px;
+  min-width: 1000px;
+  margin:  50px auto 80px;
+  .data-tab{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0 28px 0;
+    border-bottom: 1px solid #bfbfbf;
+    li{
+      height: 50px;
+      line-height: 50px;
+      padding: 0 21px;
+      font-size: 26px;
+      color: #5c657c;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    li.active {
+      background: #fbae52;
+      color: #fff;
+    }
+  }
+  .data-detail {
+    width: 1000px;
+    font-size: 0;
+    display: flex;
+    flex-wrap:wrap;
+    >li{
+      display: flex;
+      align-items: center;
+      width: 500px;
+      height: 88px;
+      padding: 38px 0 16px 0;
+      color: #999;
+      .time {
+        margin: 0 28px 0 56px;
+        p{
+          margin-bottom: 8px;
+        }
+        .week {font-size: 20px}
+        .month,.moment {font-size: 16px}
+        .moment {
+          line-height: 17px;
+          .icon-time {
+            display: inline-block;
+            vertical-align: middle;
+            width: 17px;
+            height: 17px;
+            background: url("../images/icon-time.png") no-repeat;
+            margin-right: 6px;
+          }
+          span{
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+      .info {
+        position: relative;
+        padding-left: 34px;
+        .icon{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 16px;
+          height: 16px;
+          background: #5c657c;
+          border-radius: 50%;
+        }
+        p{
+          font-size: 20px;
+          margin-bottom: 16px;
+          .info-title{
+            padding-right: 96px;
+          }
+        }
+        .pay-money {
+          color: #fbae52;
+        }
+        .normal-info {
+          color: #666;
+        }
+      }
+    }
+    >li:nth-child(odd) {
+      width: 499px;
+      border-right: 1px solid #bfbfbf;
+    }
+  }
+}
